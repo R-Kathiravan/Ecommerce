@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Ecommerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar" id="header">
+        <div class="container nav-container">
+            <a href="index.html"> <img src="./assets/stackly-logo1.webp" alt="LOGO" class="logo"> </a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#trending">Shop</a></li>
+                <li><a href="#lookbook">Lookbook</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-btn" title="Dark/Light theme-toggle"><i
+                        data-feather="moon"></i></button>
+                <button class="icon-btn cart-btn" title="Cart"><i data-feather="shopping-bag"></i><span
+                        class="badge">0</span></button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero-slider">
+
+            <div class="slide active">
+                <div class="slide-bg"
+                    style="background-image: url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=2070&auto=format&fit=crop');">
+                </div>
+                <div class="slide-overlay"></div>
+                <div class="container slide-content">
+                    <span class="overline">New Arrivals</span>
+                    <h1>Redefine Your <br>Everyday Style.</h1>
+                    <p>Minimalist design meets maximum comfort.</p>
+                    <a href="#trending" class="btn btn-primary">Shop Collection</a>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="slide-bg"
+                    style="background-image: url('https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=2070&auto=format&fit=crop');">
+                </div>
+                <div class="slide-overlay"></div>
+                <div class="container slide-content">
+                    <span class="overline">Winter Edition</span>
+                    <h1>Urban <br>Sophistication.</h1>
+                    <p>Engineered for the city streets. Weather-resistant luxury.</p>
+                    <a href="#trending" class="btn btn-primary">View Lookbook</a>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="slide-bg"
+                    style="background-image: url('https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=2070&auto=format&fit=crop');">
+                </div>
+                <div class="slide-overlay"></div>
+                <div class="container slide-content">
+                    <span class="overline">Sustainability</span>
+                    <h1>Fashion With <br>A Conscience.</h1>
+                    <p>100% Organic materials. 0% compromise on style.</p>
+                    <a href="#story" class="btn btn-primary">Our Mission</a>
+                </div>
+            </div>
+
+            <div class="slider-nav">
+                <button class="nav-dot active" data-slide="0"></button>
+                <button class="nav-dot" data-slide="1"></button>
+                <button class="nav-dot" data-slide="2"></button>
+            </div>
+
+        </section>
+
+        <section class="brands-section">
+            <div class="container" data-aos="fade-up" data-aos-duration="1000">
+                <p class="brand-text">Trusted by visionaries at</p>
+                <div class="brand-logos">
+                    <span>VOGUE</span><span>HYPEBEAST</span><span>GQ</span><span>FORBES</span><span>WIRED</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="trending" class="product-section">
+            <div class="container">
+                <div class="section-heading-wrapper" data-aos="fade-up">
+                    <span class="section-sub">Shop The Look</span>
+                    <h2>Trending Now</h2>
+                </div>
+
+                <div class="product-grid">
+                    <article class="product-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-image"
+                            style="background-image: url('https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1780&auto=format&fit=crop');">
+                            <span class="tag">New</span>
+                        </div>
+                        <div class="card-details">
+                            <h3>Essential Cotton Tee</h3>
+                            <p class="price">$45.00</p>
+                            <button class="add-btn">Add</button>
+                        </div>
+                    </article>
+                    <article class="product-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-image"
+                            style="background-image: url('https://images.unsplash.com/photo-1551028719-00167b16eac5?q=80&w=1935&auto=format&fit=crop');">
+                        </div>
+                        <div class="card-details">
+                            <h3>Utility Chore Jacket</h3>
+                            <p class="price">$120.00</p>
+                            <button class="add-btn">Add</button>
+                        </div>
+                    </article>
+                    <article class="product-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-image"
+                            style="background-image: url('https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=1887&auto=format&fit=crop');">
+                        </div>
+                        <div class="card-details">
+                            <h3>Relaxed Fit Trousers</h3>
+                            <p class="price">$75.00</p>
+                            <button class="add-btn">Add</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="collections">
+            <div class="container">
+                <div class="section-heading-wrapper" data-aos="fade-up">
+                    <span class="section-sub">Categories</span>
+                    <h2>Curated Collections</h2>
+                </div>
+
+                <div class="collection-grid">
+                    <a href="#" class="collection-item tall" data-aos="zoom-in" data-aos-duration="1000"
+                        style="background-image: url('https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?q=80&w=1887&auto=format&fit=crop');">
+                        <div class="collection-content">
+                            <h3>Men's Essentials</h3><span>Shop Now</span>
+                        </div>
+                    </a>
+                    <a href="#" class="collection-item" data-aos="zoom-in" data-aos-delay="200"
+                        style="background-image: url('https://images.unsplash.com/photo-1618244972963-dbee1a7edc95?q=80&w=1887&auto=format&fit=crop');">
+                        <div class="collection-content">
+                            <h3>Women's Knitwear</h3><span>Shop Now</span>
+                        </div>
+                    </a>
+                    <a href="#" class="collection-item" data-aos="zoom-in" data-aos-delay="400"
+                        style="background-image: url('https://images.unsplash.com/photo-1623998021450-85c29c644e0d?q=80&w=1935&auto=format&fit=crop');">
+                        <div class="collection-content">
+                            <h3>Accessories</h3><span>Shop Now</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="lookbook">
+            <div class="container">
+                <div class="section-heading-wrapper" data-aos="fade-up">
+                    <span class="section-sub">@Stackly_OFFICIAL</span>
+                    <h2>Style Inspiration</h2>
+                </div>
+
+                <div class="lookbook-grid">
+                    <div class="lookbook-item" data-aos="fade-up">
+                        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=2020&auto=format&fit=crop"
+                            alt="Style">
+                        <i data-feather="instagram" class="insta-icon"></i>
+                    </div>
+                    <div class="lookbook-item" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?q=80&w=1964&auto=format&fit=crop"
+                            alt="Style">
+                        <i data-feather="instagram" class="insta-icon"></i>
+                    </div>
+                    <div class="lookbook-item" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=2070&auto=format&fit=crop"
+                            alt="Style">
+                        <i data-feather="instagram" class="insta-icon"></i>
+                    </div>
+                    <div class="lookbook-item" data-aos="fade-up" data-aos-delay="300">
+                        <img src="https://images.unsplash.com/photo-1550614000-4b9519e09063?q=80&w=2074&auto=format&fit=crop"
+                            alt="Style">
+                        <i data-feather="instagram" class="insta-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="story" class="story-section">
+            <div class="container">
+                <div class="story-image" data-aos="fade-right"
+                    style="background-image: url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=2070&auto=format&fit=crop');">
+                </div>
+                <div class="story-content" data-aos="fade-left">
+                    <div class="section-heading-wrapper" style="text-align: left; margin-bottom: 2rem; margin-left: 0;">
+                        <span class="section-sub">Our Origins</span>
+                        <h2>Designed for the <br>Modern Era.</h2>
+                    </div>
+                    <p>We started Stackly with a simple mission: to create clothing that feels as good as it looks.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq">
+            <div class="container">
+                <div class="section-heading-wrapper" data-aos="fade-up">
+                    <span class="section-sub">Support</span>
+                    <h2>Frequently Asked</h2>
+                </div>
+
+                <div class="faq-container">
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                        <button class="faq-question">
+                            <span>What is your return policy?</span>
+                            <i data-feather="plus" class="faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We offer a 30-day return policy for all unworn items with original tags attached. Returns
+                                are free for all domestic orders.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                        <button class="faq-question">
+                            <span>Do you ship internationally?</span>
+                            <i data-feather="plus" class="faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, we ship to over 50 countries worldwide. Shipping times vary by location but
+                                typically take 5-10 business days.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                        <button class="faq-question">
+                            <span>How do I care for my garments?</span>
+                            <i data-feather="plus" class="faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Most of our items are made from organic cotton and should be washed on cold and hung to
+                                dry to preserve their fit and color.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-section">
+            <div class="container newsletter-box" data-aos="zoom-in">
+                <h2>Join the Inner Circle</h2>
+                <p>Get early access to drops and 10% off your first order.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-col brand-col" data-aos="fade-up" data-aos-delay="0">
+                    <img src="./assets/stackly-logo1.webp" alt="LOGO" class="logo">
+                    <p>Redefining the standard of modern apparel. Sustainable materials, ethical production, and
+                        timeless design for the conscious creator.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Instagram"><i data-feather="instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i data-feather="twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i data-feather="facebook"></i></a>
+                        <a href="#" aria-label="Youtube"><i data-feather="youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="100">
+                    <h4>Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="#hero">New Arrivals</a></li>
+                        <li><a href="#trending">Best Sellers</a></li>
+                        <li><a href="#collections">Men</a></li>
+                        <li><a href="#collections">Women</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="200">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#faq">Help Center</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="300">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#story">Our Story</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2025 Stackly Theme. All rights reserved.
+                </div>
+                <div class="payment-methods">
+                    <span>VISA</span>
+                    <span>AMEX</span>
+                    <span>MASTERCARD</span>
+                    <span>PAYPAL</span>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js" defer></script>
+    <script>
+        // --- 1. INITIALIZE ANIMATIONS ---
+        AOS.init({
+            offset: 100, // offset (in px) from the original trigger point
+            duration: 800, // values from 0 to 3000, with step 50ms
+            easing: 'ease-out-cubic', // default easing for AOS animations
+            once: true, // whether animation should happen only once - while scrolling down
+        });
+
+        // --- 2. FAQ ACCORDION LOGIC ---
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                // Close other items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) otherItem.classList.remove('active');
+                });
+                // Toggle current
+                item.classList.toggle('active');
+            });
+        });
+
+        // --- 3. THEME & SLIDER LOGIC (KEEP YOUR PREVIOUS JS HERE) ---
+        // (Paste the Dark Mode and Slider logic I gave you before here)
+        // ...
+
+        // Initialize Icons
+        feather.replace();
+        // --- HERO SLIDER LOGIC ---
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.nav-dot');
+        let currentSlide = 0;
+        const slideInterval = 3000; // Change every 5 seconds
+
+        function showSlide(index) {
+            // Remove active class from all
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+
+            // Add active class to current
+            slides[index].classList.add('active');
+            dots[index].classList.add('active');
+
+            currentSlide = index;
+        }
+
+        function nextSlide() {
+            let newIndex = (currentSlide + 1) % slides.length;
+            showSlide(newIndex);
+        }
+
+        // Auto Play
+        let slideTimer = setInterval(nextSlide, slideInterval);
+
+        // Manual Navigation (Dots)
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                clearInterval(slideTimer); // Stop timer when user clicks
+                showSlide(index);
+                slideTimer = setInterval(nextSlide, slideInterval); // Restart timer
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA | SaaS Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="saas-body">
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">AURA<span style="color:var(--text-muted);">.ai</span></a>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#testimonials">Customers</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-btn"><i data-feather="moon"></i></button>
+                <a href="#" class="btn btn-primary btn-sm">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="saas-hero">
+            <div class="glow-bg"></div>
+
+            <div class="container hero-center">
+                <div class="badge-pill" data-aos="fade-up">v2.0 is now live 🚀</div>
+                <h1 data-aos="fade-up" data-aos-delay="100">Analytics that <br>drive growth.</h1>
+                <p data-aos="fade-up" data-aos-delay="200">Stop guessing. Start knowing. The all-in-one dashboard for
+                    modern teams to track, analyze, and scale revenue.</p>
+
+                <div class="hero-btns" data-aos="fade-up" data-aos-delay="300">
+                    <a href="#" class="btn btn-primary">Start Free Trial</a>
+                    <a href="#" class="btn btn-outline"><i data-feather="play-circle"
+                            style="width:16px; margin-right:5px;"></i> Demo</a>
+                </div>
+
+                <div class="dashboard-preview" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop"
+                        alt="Dashboard Interface">
+                    <div class="floating-card card-1">
+                        <span>Revenue</span>
+                        <strong>$124k</strong>
+                    </div>
+                    <div class="floating-card card-2">
+                        <span>Growth</span>
+                        <strong>+24%</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="logo-section">
+            <div class="container">
+                <p>Powering next-gen teams at</p>
+                <div class="brand-logos saas-logos">
+                    <span>ACME Corp</span>
+                    <span>Linear</span>
+                    <span>Vercel</span>
+                    <span>Stripe</span>
+                    <span>Notion</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="saas-section">
+            <div class="container">
+                <div class="section-heading-wrapper" data-aos="fade-up">
+                    <span class="section-sub">Capabilities</span>
+                    <h2>Everything you need.</h2>
+                </div>
+
+                <div class="bento-grid">
+                    <div class="bento-item large" data-aos="fade-right">
+                        <i data-feather="bar-chart-2" class="bento-icon"></i>
+                        <h3>Real-time Analytics</h3>
+                        <p>Monitor your data as it happens with <br>sub-second latency.</p>
+                        <div class="bento-visual graph-visual"></div>
+                    </div>
+
+                    <div class="bento-item" data-aos="fade-left" data-aos-delay="100">
+                        <i data-feather="shield"></i>
+                        <h3>Bank-grade Security</h3>
+                        <p>SOC2 Type II certified and encrypted.</p>
+                    </div>
+
+                    <div class="bento-item" data-aos="fade-left" data-aos-delay="200">
+                        <i data-feather="zap"></i>
+                        <h3>Instant Integration</h3>
+                        <p>Connects with Slack, Notion, and Jira.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="saas-section">
+            <div class="container">
+                <div class="section-heading-wrapper" data-aos="fade-up">
+                    <span class="section-sub">Plans</span>
+                    <h2>Simple Pricing.</h2>
+                </div>
+
+                <div class="pricing-toggle" data-aos="fade-up">
+                    <span>Monthly</span>
+                    <label class="switch">
+                        <input type="checkbox" id="price-switch">
+                        <span class="slider round"></span>
+                    </label>
+                    <span>Yearly <span class="save-badge">Save 20%</span></span>
+                </div>
+
+                <div class="pricing-grid">
+                    <div class="price-card" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Starter</h3>
+                        <div class="price-number">$0<span>/mo</span></div>
+                        <p>Perfect for side projects.</p>
+                        <ul class="check-list">
+                            <li><i data-feather="check"></i> 1 User</li>
+                            <li><i data-feather="check"></i> 5 Projects</li>
+                            <li><i data-feather="check"></i> Community Support</li>
+                        </ul>
+                        <button class="btn btn-outline full-width">Start Free</button>
+                    </div>
+
+                    <div class="price-card featured" data-aos="fade-up" data-aos-delay="200">
+                        <div class="pop-tag">Most Popular</div>
+                        <h3>Pro</h3>
+                        <div class="price-number"><span class="amount">$29</span><span>/mo</span></div>
+                        <p>For growing teams.</p>
+                        <ul class="check-list">
+                            <li><i data-feather="check"></i> 5 Users</li>
+                            <li><i data-feather="check"></i> Unlimited Projects</li>
+                            <li><i data-feather="check"></i> Priority Support</li>
+                            <li><i data-feather="check"></i> Analytics</li>
+                        </ul>
+                        <button class="btn btn-primary full-width">Get Pro</button>
+                    </div>
+
+                    <div class="price-card" data-aos="fade-up" data-aos-delay="300">
+                        <h3>Enterprise</h3>
+                        <div class="price-number">$99<span>/mo</span></div>
+                        <p>For large scale needs.</p>
+                        <ul class="check-list">
+                            <li><i data-feather="check"></i> Unlimited Users</li>
+                            <li><i data-feather="check"></i> SSO & Audit Logs</li>
+                            <li><i data-feather="check"></i> Dedicated Manager</li>
+                        </ul>
+                        <button class="btn btn-outline full-width">Contact Sales</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-gradient" data-aos="zoom-in">
+            <div class="container cta-content">
+                <h2>Ready to scale?</h2>
+                <p>Join 10,000+ developers building the future.</p>
+                <div class="hero-btns">
+                    <a href="#" class="btn btn-primary inverted">Start Building</a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <div class="container footer-bottom">
+                <p>&copy; 2025 AURA AI. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, duration: 800 });
+        feather.replace();
+
+        // Dark Mode Logic (Copied from index.html for consistency)
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const htmlElement = document.documentElement;
+
+        // Initial Check
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        htmlElement.setAttribute('data-theme', currentTheme);
+        updateIcon(currentTheme);
+
+        themeToggleBtn.addEventListener('click', () => {
+            let theme = htmlElement.getAttribute('data-theme');
+            let newTheme = theme === 'light' ? 'dark' : 'light';
+            htmlElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateIcon(newTheme);
+        });
+
+        function updateIcon(theme) {
+            if (theme === 'dark') {
+                themeToggleBtn.innerHTML = '<i data-feather="sun"></i>';
+            } else {
+                themeToggleBtn.innerHTML = '<i data-feather="moon"></i>';
+            }
+            feather.replace();
+        }
+
+        // Pricing Toggle Logic
+        const priceSwitch = document.getElementById('price-switch');
+        const amounts = document.querySelectorAll('.amount');
+
+        priceSwitch.addEventListener('change', () => {
+            if (priceSwitch.checked) {
+                // Yearly Prices (simulated math)
+                amounts[0].textContent = "$24"; // was 29
+            } else {
+                // Monthly Prices
+                amounts[0].textContent = "$29";
+            }
+        });
+    </script>
+</body>
+
+</html>
