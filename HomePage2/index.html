@@ -4,177 +4,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AURA | SaaS Platform</title>
+    <title>AURA | Street & Sport</title>
     <link rel="stylesheet" href="style.css">
     <link
-        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@400;600&display=swap"
         rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body class="saas-body">
+<body>
+
+    <div class="announcement-bar">
+        FREE EXPRESS SHIPPING ON ALL ORDERS OVER $150 — WORLDWIDE.
+    </div>
+
 
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="index.html" class="logo">AURA<span style="color:var(--text-muted);">.ai</span></a>
-            <ul class="nav-links">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#testimonials">Customers</a></li>
-            </ul>
-            <div class="nav-actions">
-                <button id="theme-toggle" class="icon-btn"><i data-feather="moon"></i></button>
-                <a href="#" class="btn btn-primary btn-sm">Get Started</a>
+            <div class="nav-left">
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Drops</a>
+            </div>
+            <img src="./assets/stackly-logo1.webp" alt="LOGO" class="logo">
+            <div class="nav-right">
+                <button class="icon-btn">Search</button>
+                <button class="icon-btn">Cart (0)</button>
             </div>
         </div>
     </nav>
 
     <main>
-        <section class="saas-hero">
-            <div class="glow-bg"></div>
+        <div class="hero">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
 
-            <div class="container hero-center">
-                <div class="badge-pill" data-aos="fade-up">v2.0 is now live 🚀</div>
-                <h1 data-aos="fade-up" data-aos-delay="100">Analytics that <br>drive growth.</h1>
-                <p data-aos="fade-up" data-aos-delay="200">Stop guessing. Start knowing. The all-in-one dashboard for
-                    modern teams to track, analyze, and scale revenue.</p>
-
-                <div class="hero-btns" data-aos="fade-up" data-aos-delay="300">
-                    <a href="#" class="btn btn-primary">Start Free Trial</a>
-                    <a href="#" class="btn btn-outline"><i data-feather="play-circle"
-                            style="width:16px; margin-right:5px;"></i> Demo</a>
-                </div>
-
-                <div class="dashboard-preview" data-aos="zoom-in" data-aos-delay="500">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop"
-                        alt="Dashboard Interface">
-                    <div class="floating-card card-1">
-                        <span>Revenue</span>
-                        <strong>$124k</strong>
-                    </div>
-                    <div class="floating-card card-2">
-                        <span>Growth</span>
-                        <strong>+24%</strong>
-                    </div>
-                </div>
+            <div class="glass-card">
+                <h1>LIQUID FUTURE</h1>
+                <p>Experience the next generation of digital fluidity. Soft, organic, and beautifully chaotic.</p>
+                <a href="#services" class="glass-btn">Explore</a>
             </div>
-        </section>
-
-        <section class="logo-section">
+        </div>
+        <section class="hero-grid-section">
             <div class="container">
-                <p>Powering next-gen teams at</p>
-                <div class="brand-logos saas-logos">
-                    <span>ACME Corp</span>
-                    <span>Linear</span>
-                    <span>Vercel</span>
-                    <span>Stripe</span>
-                    <span>Notion</span>
+                <div class="bento-hero">
+                    <div class="hero-item main" data-aos="fade-up">
+                        <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=2670&auto=format&fit=crop"
+                            alt="Main Model">
+                        <div class="hero-text">
+                            <h2>Urban <br>Utility.</h2>
+                            <a href="#" class="btn-underline">Shop Collection</a>
+                        </div>
+                    </div>
+                    <div class="hero-item sub-1" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=2020&auto=format&fit=crop"
+                            alt="Sub 1">
+                        <div class="overlay-text">New Season</div>
+                    </div>
+                    <div class="hero-item sub-2" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=2070&auto=format&fit=crop"
+                            alt="Sub 2">
+                        <div class="overlay-text">Accessories</div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="features" class="saas-section">
+        <div class="marquee-section">
+            <div class="marquee-content">
+                <span>NEW DROP FRIDAY</span>
+                <span class="divider">•</span>
+                <span>LIMITED EDITION</span>
+                <span class="divider">•</span>
+                <span>SUMMER '25</span>
+                <span class="divider">•</span>
+                <span>NEW DROP FRIDAY</span>
+                <span class="divider">•</span>
+                <span>LIMITED EDITION</span>
+                <span class="divider">•</span>
+            </div>
+        </div>
+
+        <section class="slider-section">
             <div class="container">
-                <div class="section-heading-wrapper" data-aos="fade-up">
-                    <span class="section-sub">Capabilities</span>
-                    <h2>Everything you need.</h2>
+                <div class="section-header">
+                    <h3>Weekly Favorites</h3>
+                    <div class="slider-arrows">
+                        <button id="scrollLeft"><i data-feather="arrow-left"></i></button>
+                        <button id="scrollRight"><i data-feather="arrow-right"></i></button>
+                    </div>
                 </div>
 
-                <div class="bento-grid">
-                    <div class="bento-item large" data-aos="fade-right">
-                        <i data-feather="bar-chart-2" class="bento-icon"></i>
-                        <h3>Real-time Analytics</h3>
-                        <p>Monitor your data as it happens with <br>sub-second latency.</p>
-                        <div class="bento-visual graph-visual"></div>
+                <div class="horizontal-scroll" id="productContainer">
+                    <div class="scroll-card">
+                        <div class="p-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1780&auto=format&fit=crop">
+                            <div class="quick-add">+</div>
+                        </div>
+                        <div class="p-info">
+                            <h4>Boxy Tee</h4>
+                            <span>$45.00</span>
+                        </div>
                     </div>
-
-                    <div class="bento-item" data-aos="fade-left" data-aos-delay="100">
-                        <i data-feather="shield"></i>
-                        <h3>Bank-grade Security</h3>
-                        <p>SOC2 Type II certified and encrypted.</p>
+                    <div class="scroll-card">
+                        <div class="p-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?q=80&w=2030&auto=format&fit=crop">
+                            <div class="quick-add">+</div>
+                        </div>
+                        <div class="p-info">
+                            <h4>Graphic Hoodie</h4>
+                            <span>$85.00</span>
+                        </div>
                     </div>
-
-                    <div class="bento-item" data-aos="fade-left" data-aos-delay="200">
-                        <i data-feather="zap"></i>
-                        <h3>Instant Integration</h3>
-                        <p>Connects with Slack, Notion, and Jira.</p>
+                    <div class="scroll-card">
+                        <div class="p-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=1936&auto=format&fit=crop">
+                            <div class="quick-add">+</div>
+                        </div>
+                        <div class="p-info">
+                            <h4>Bomber Jacket</h4>
+                            <span>$120.00</span>
+                        </div>
+                    </div>
+                    <div class="scroll-card">
+                        <div class="p-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop">
+                            <div class="quick-add">+</div>
+                        </div>
+                        <div class="p-info">
+                            <h4>Sport Runner</h4>
+                            <span>$140.00</span>
+                        </div>
+                    </div>
+                    <div class="scroll-card">
+                        <div class="p-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1582552966584-f282f8936634?q=80&w=1887&auto=format&fit=crop">
+                            <div class="quick-add">+</div>
+                        </div>
+                        <div class="p-info">
+                            <h4>Knit Beanie</h4>
+                            <span>$35.00</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="pricing" class="saas-section">
+        <section class="countdown-section">
+            <div class="container countdown-grid">
+                <div class="count-content" data-aos="fade-right">
+                    <span class="label-red">Flash Sale</span>
+                    <h2>End of Season <br>Clearance</h2>
+                    <p>Up to 50% off selected styles. Offer ends when the timer hits zero.</p>
+                    <a href="#" class="btn-solid">Shop Sale</a>
+                </div>
+                <div class="count-timer" data-aos="zoom-in">
+                    <div class="time-box">
+                        <span id="hours">04</span>
+                        <small>Hours</small>
+                    </div>
+                    <div class="colon">:</div>
+                    <div class="time-box">
+                        <span id="minutes">45</span>
+                        <small>Mins</small>
+                    </div>
+                    <div class="colon">:</div>
+                    <div class="time-box">
+                        <span id="seconds">12</span>
+                        <small>Secs</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer-v2">
             <div class="container">
-                <div class="section-heading-wrapper" data-aos="fade-up">
-                    <span class="section-sub">Plans</span>
-                    <h2>Simple Pricing.</h2>
-                </div>
-
-                <div class="pricing-toggle" data-aos="fade-up">
-                    <span>Monthly</span>
-                    <label class="switch">
-                        <input type="checkbox" id="price-switch">
-                        <span class="slider round"></span>
-                    </label>
-                    <span>Yearly <span class="save-badge">Save 20%</span></span>
-                </div>
-
-                <div class="pricing-grid">
-                    <div class="price-card" data-aos="fade-up" data-aos-delay="100">
-                        <h3>Starter</h3>
-                        <div class="price-number">$0<span>/mo</span></div>
-                        <p>Perfect for side projects.</p>
-                        <ul class="check-list">
-                            <li><i data-feather="check"></i> 1 User</li>
-                            <li><i data-feather="check"></i> 5 Projects</li>
-                            <li><i data-feather="check"></i> Community Support</li>
-                        </ul>
-                        <button class="btn btn-outline full-width">Start Free</button>
-                    </div>
-
-                    <div class="price-card featured" data-aos="fade-up" data-aos-delay="200">
-                        <div class="pop-tag">Most Popular</div>
-                        <h3>Pro</h3>
-                        <div class="price-number"><span class="amount">$29</span><span>/mo</span></div>
-                        <p>For growing teams.</p>
-                        <ul class="check-list">
-                            <li><i data-feather="check"></i> 5 Users</li>
-                            <li><i data-feather="check"></i> Unlimited Projects</li>
-                            <li><i data-feather="check"></i> Priority Support</li>
-                            <li><i data-feather="check"></i> Analytics</li>
-                        </ul>
-                        <button class="btn btn-primary full-width">Get Pro</button>
-                    </div>
-
-                    <div class="price-card" data-aos="fade-up" data-aos-delay="300">
-                        <h3>Enterprise</h3>
-                        <div class="price-number">$99<span>/mo</span></div>
-                        <p>For large scale needs.</p>
-                        <ul class="check-list">
-                            <li><i data-feather="check"></i> Unlimited Users</li>
-                            <li><i data-feather="check"></i> SSO & Audit Logs</li>
-                            <li><i data-feather="check"></i> Dedicated Manager</li>
-                        </ul>
-                        <button class="btn btn-outline full-width">Contact Sales</button>
+                <div class="footer-top">
+                    <img src="./assets/stackly-logo1.webp" alt="LOGO" class="logo">
+                    <div class="socials-v2">
+                        <a href="#">IG</a>
+                        <a href="#">TW</a>
+                        <a href="#">YT</a>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="cta-gradient" data-aos="zoom-in">
-            <div class="container cta-content">
-                <h2>Ready to scale?</h2>
-                <p>Join 10,000+ developers building the future.</p>
-                <div class="hero-btns">
-                    <a href="#" class="btn btn-primary inverted">Start Building</a>
+                <div class="footer-bottom-row">
+                    <p>&copy; 2025 AURA Retail Group.</p>
+                    <div class="links">
+                        <a href="#">Privacy</a>
+                        <a href="#">Terms</a>
+                    </div>
                 </div>
-            </div>
-        </section>
-
-        <footer class="site-footer">
-            <div class="container footer-bottom">
-                <p>&copy; 2025 AURA AI. All rights reserved.</p>
             </div>
         </footer>
 
@@ -182,48 +208,50 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({ once: true, duration: 800 });
+        AOS.init();
         feather.replace();
 
-        // Dark Mode Logic (Copied from index.html for consistency)
-        const themeToggleBtn = document.getElementById('theme-toggle');
-        const htmlElement = document.documentElement;
-
-        // Initial Check
-        const currentTheme = localStorage.getItem('theme') || 'light';
-        htmlElement.setAttribute('data-theme', currentTheme);
-        updateIcon(currentTheme);
-
-        themeToggleBtn.addEventListener('click', () => {
-            let theme = htmlElement.getAttribute('data-theme');
-            let newTheme = theme === 'light' ? 'dark' : 'light';
-            htmlElement.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateIcon(newTheme);
+        // 1. Horizontal Scroll Logic
+        const container = document.getElementById('productContainer');
+        document.getElementById('scrollLeft').addEventListener('click', () => {
+            container.scrollBy({ left: -350, behavior: 'smooth' });
+        });
+        document.getElementById('scrollRight').addEventListener('click', () => {
+            container.scrollBy({ left: 350, behavior: 'smooth' });
         });
 
-        function updateIcon(theme) {
-            if (theme === 'dark') {
-                themeToggleBtn.innerHTML = '<i data-feather="sun"></i>';
-            } else {
-                themeToggleBtn.innerHTML = '<i data-feather="moon"></i>';
-            }
-            feather.replace();
+        // 2. Countdown Logic
+        function startTimer(duration, displayHours, displayMinutes, displaySeconds) {
+            let timer = duration, hours, minutes, seconds;
+            setInterval(function () {
+                hours = parseInt(timer / 3600, 10);
+                minutes = parseInt((timer % 3600) / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                hours = hours < 10 ? "0" + hours : hours;
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                displayHours.textContent = hours;
+                displayMinutes.textContent = minutes;
+                displaySeconds.textContent = seconds;
+
+                if (--timer < 0) {
+                    timer = duration;
+                }
+            }, 1000);
         }
 
-        // Pricing Toggle Logic
-        const priceSwitch = document.getElementById('price-switch');
-        const amounts = document.querySelectorAll('.amount');
-
-        priceSwitch.addEventListener('change', () => {
-            if (priceSwitch.checked) {
-                // Yearly Prices (simulated math)
-                amounts[0].textContent = "$24"; // was 29
-            } else {
-                // Monthly Prices
-                amounts[0].textContent = "$29";
-            }
-        });
+        window.onload = function () {
+            // Set timer for 4 hours (in seconds)
+            let timeInSeconds = 60 * 60 * 4;
+            startTimer(
+                timeInSeconds,
+                document.querySelector('#hours'),
+                document.querySelector('#minutes'),
+                document.querySelector('#seconds')
+            );
+        };
     </script>
 </body>
 

@@ -11,6 +11,8 @@
         rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
 <body>
@@ -18,16 +20,38 @@
         <div class="container nav-container">
             <a href="index.html"> <img src="./assets/stackly-logo1.webp" alt="LOGO" class="logo"> </a>
             <ul class="nav-links">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#trending">Shop</a></li>
-                <li><a href="#lookbook">Lookbook</a></li>
-                <li><a href="#faq">FAQ</a></li>
+                <div class="home-nav">
+                    <a href="index.html" class="home-btn active">Home</a>
+
+                    <span class="material-icons dropdown-icon" id="homeDropdownBtn">
+                        expand_more
+                    </span>
+
+                    <div class="home-select" id="homeDropdown">
+                        <a href="./HomePage2/index.html">Home Page 2</a>
+                    </div>
+                </div>
+                <li><a href="404page.html">Services</a></li>
+                <li><a href="404page.html">About</a></li>
+                <li><a href="404page.html">Blog</a></li>
+                <li><a href="404page.html">Products</a></li>
+                <li><a href="404page.html">Contact</a></li>
+                <div class="nav-actions-hid">
+                    <button id="theme-toggle" class="icon-btn" title="Dark/Light theme-toggle"><i
+                            data-feather="moon"></i>Toggle Mode</button>
+                    <a href="404page.html">
+                        <span class="material-icons icon-btn">person_outline</span> Login</a>
+                </div>
+                <div class="btn-close"><span class="material-icons">close</span></div>
             </ul>
             <div class="nav-actions">
-                <button id="theme-toggle" class="icon-btn" title="Dark/Light theme-toggle"><i
+                <button id="theme-toggle1" class="icon-btn" title="Dark/Light theme-toggle"><i
                         data-feather="moon"></i></button>
-                <button class="icon-btn cart-btn" title="Cart"><i data-feather="shopping-bag"></i><span
-                        class="badge">0</span></button>
+                <a href="404page.html">
+                    <span class="material-icons icon-btn" title="login">person_outline</span></a>
+            </div>
+            <div class="hamburger">
+                &#9776
             </div>
         </div>
     </nav>
@@ -36,41 +60,38 @@
         <section id="hero" class="hero-slider">
 
             <div class="slide active">
-                <div class="slide-bg"
-                    style="background-image: url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=2070&auto=format&fit=crop');">
+                <div class="slide-bg" style="background-image: url('./assets/hero1.webp');">
                 </div>
                 <div class="slide-overlay"></div>
                 <div class="container slide-content">
                     <span class="overline">New Arrivals</span>
                     <h1>Redefine Your <br>Everyday Style.</h1>
                     <p>Minimalist design meets maximum comfort.</p>
-                    <a href="#trending" class="btn btn-primary">Shop Collection</a>
+                    <a href="404page.html" class="btn btn-primary">Shop Collection</a>
                 </div>
             </div>
 
             <div class="slide">
-                <div class="slide-bg"
-                    style="background-image: url('https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=2070&auto=format&fit=crop');">
+                <div class="slide-bg" style="background-image: url('./assets/hero2.webp');">
                 </div>
                 <div class="slide-overlay"></div>
                 <div class="container slide-content">
                     <span class="overline">Winter Edition</span>
                     <h1>Urban <br>Sophistication.</h1>
                     <p>Engineered for the city streets. Weather-resistant luxury.</p>
-                    <a href="#trending" class="btn btn-primary">View Lookbook</a>
+                    <a href="404page.html" class="btn btn-primary">View Lookbook</a>
                 </div>
             </div>
 
             <div class="slide">
-                <div class="slide-bg"
-                    style="background-image: url('https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=2070&auto=format&fit=crop');">
+                <div class="slide-bg" style="background-image: url('./assets/hero3.webp');">
                 </div>
                 <div class="slide-overlay"></div>
                 <div class="container slide-content">
                     <span class="overline">Sustainability</span>
                     <h1>Fashion With <br>A Conscience.</h1>
                     <p>100% Organic materials. 0% compromise on style.</p>
-                    <a href="#story" class="btn btn-primary">Our Mission</a>
+                    <a href="404page.html" class="btn btn-primary">Our Mission</a>
                 </div>
             </div>
 
@@ -100,34 +121,31 @@
 
                 <div class="product-grid">
                     <article class="product-card" data-aos="fade-up" data-aos-delay="100">
-                        <div class="card-image"
-                            style="background-image: url('https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1780&auto=format&fit=crop');">
+                        <div class="card-image" style="background-image: url('./assets/product1.webp');">
                             <span class="tag">New</span>
                         </div>
                         <div class="card-details">
                             <h3>Essential Cotton Tee</h3>
                             <p class="price">$45.00</p>
-                            <button class="add-btn">Add</button>
+                            <a href="404page.html" class="add-btn">Add</a>
                         </div>
                     </article>
                     <article class="product-card" data-aos="fade-up" data-aos-delay="200">
-                        <div class="card-image"
-                            style="background-image: url('https://images.unsplash.com/photo-1551028719-00167b16eac5?q=80&w=1935&auto=format&fit=crop');">
+                        <div class="card-image" style="background-image: url('./assets/product2.webp');">
                         </div>
                         <div class="card-details">
                             <h3>Utility Chore Jacket</h3>
                             <p class="price">$120.00</p>
-                            <button class="add-btn">Add</button>
+                            <a href="404page.html" class="add-btn">Add</a>
                         </div>
                     </article>
                     <article class="product-card" data-aos="fade-up" data-aos-delay="300">
-                        <div class="card-image"
-                            style="background-image: url('https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=1887&auto=format&fit=crop');">
+                        <div class="card-image" style="background-image: url('./assets/product3.webp');">
                         </div>
                         <div class="card-details">
                             <h3>Relaxed Fit Trousers</h3>
                             <p class="price">$75.00</p>
-                            <button class="add-btn">Add</button>
+                            <a href="404page.html" class="add-btn">Add</a>
                         </div>
                     </article>
                 </div>
@@ -142,20 +160,20 @@
                 </div>
 
                 <div class="collection-grid">
-                    <a href="#" class="collection-item tall" data-aos="zoom-in" data-aos-duration="1000"
-                        style="background-image: url('https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?q=80&w=1887&auto=format&fit=crop');">
+                    <a href="404page.html" class="collection-item tall" data-aos="zoom-in" data-aos-duration="1000"
+                        style="background-image: url('./assets/collection1.webp');">
                         <div class="collection-content">
                             <h3>Men's Essentials</h3><span>Shop Now</span>
                         </div>
                     </a>
-                    <a href="#" class="collection-item" data-aos="zoom-in" data-aos-delay="200"
-                        style="background-image: url('https://images.unsplash.com/photo-1618244972963-dbee1a7edc95?q=80&w=1887&auto=format&fit=crop');">
+                    <a href="404page.html" class="collection-item" data-aos="zoom-in" data-aos-delay="200"
+                        style="background-image: url('./assets/collection2.webp');">
                         <div class="collection-content">
                             <h3>Women's Knitwear</h3><span>Shop Now</span>
                         </div>
                     </a>
-                    <a href="#" class="collection-item" data-aos="zoom-in" data-aos-delay="400"
-                        style="background-image: url('https://images.unsplash.com/photo-1623998021450-85c29c644e0d?q=80&w=1935&auto=format&fit=crop');">
+                    <a href="404page.html" class="collection-item" data-aos="zoom-in" data-aos-delay="400"
+                        style="background-image: url('./assets/collection3.webp');">
                         <div class="collection-content">
                             <h3>Accessories</h3><span>Shop Now</span>
                         </div>
@@ -173,23 +191,19 @@
 
                 <div class="lookbook-grid">
                     <div class="lookbook-item" data-aos="fade-up">
-                        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=2020&auto=format&fit=crop"
-                            alt="Style">
+                        <img src="./assets/style1.webp" alt="Style">
                         <i data-feather="instagram" class="insta-icon"></i>
                     </div>
                     <div class="lookbook-item" data-aos="fade-up" data-aos-delay="100">
-                        <img src="https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?q=80&w=1964&auto=format&fit=crop"
-                            alt="Style">
+                        <img src="./assets/style2.webp" alt="Style">
                         <i data-feather="instagram" class="insta-icon"></i>
                     </div>
                     <div class="lookbook-item" data-aos="fade-up" data-aos-delay="200">
-                        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=2070&auto=format&fit=crop"
-                            alt="Style">
+                        <img src="./assets/style3.webp" alt="Style">
                         <i data-feather="instagram" class="insta-icon"></i>
                     </div>
                     <div class="lookbook-item" data-aos="fade-up" data-aos-delay="300">
-                        <img src="https://images.unsplash.com/photo-1550614000-4b9519e09063?q=80&w=2074&auto=format&fit=crop"
-                            alt="Style">
+                        <img src="./assets/style4.webp" alt="Style">
                         <i data-feather="instagram" class="insta-icon"></i>
                     </div>
                 </div>
@@ -198,8 +212,7 @@
 
         <section id="story" class="story-section">
             <div class="container">
-                <div class="story-image" data-aos="fade-right"
-                    style="background-image: url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=2070&auto=format&fit=crop');">
+                <div class="story-image" data-aos="fade-right" style="background-image: url('./assets/about.webp');">
                 </div>
                 <div class="story-content" data-aos="fade-left">
                     <div class="section-heading-wrapper" style="text-align: left; margin-bottom: 2rem; margin-left: 0;">
@@ -257,9 +270,10 @@
             <div class="container newsletter-box" data-aos="zoom-in">
                 <h2>Join the Inner Circle</h2>
                 <p>Get early access to drops and 10% off your first order.</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Your email address" required>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email" id="newsletterEmail">
                     <button type="submit" class="btn btn-primary">Subscribe</button>
+                    <small class="form-message " id="formMessage"></small>
                 </form>
             </div>
         </section>
@@ -276,57 +290,53 @@
                     <p>Redefining the standard of modern apparel. Sustainable materials, ethical production, and
                         timeless design for the conscious creator.</p>
                     <div class="footer-socials">
-                        <a href="#" aria-label="Instagram"><i data-feather="instagram"></i></a>
-                        <a href="#" aria-label="Twitter"><i data-feather="twitter"></i></a>
-                        <a href="#" aria-label="Facebook"><i data-feather="facebook"></i></a>
-                        <a href="#" aria-label="Youtube"><i data-feather="youtube"></i></a>
+                        <a href="404page.html" aria-label="Instagram"><i data-feather="instagram"></i></a>
+                        <a href="404page.html" aria-label="Twitter"><i data-feather="twitter"></i></a>
+                        <a href="404page.html" aria-label="Facebook"><i data-feather="facebook"></i></a>
+                        <a href="404page.html" aria-label="Youtube"><i data-feather="youtube"></i></a>
                     </div>
                 </div>
 
                 <div class="footer-col" data-aos="fade-up" data-aos-delay="100">
+                    <h4>Pages</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="404page.html">Services</a></li>
+                        <li><a href="404page.html">About</a></li>
+                        <li><a href="404page.html">Blog</a></li>
+                        <li><a href="404page.html">Products</a></li>
+                        <li><a href="404page.html">contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="100">
                     <h4>Shop</h4>
                     <ul class="footer-links">
-                        <li><a href="#hero">New Arrivals</a></li>
-                        <li><a href="#trending">Best Sellers</a></li>
-                        <li><a href="#collections">Men</a></li>
-                        <li><a href="#collections">Women</a></li>
-                        <li><a href="#">Accessories</a></li>
+                        <li><a href="404page.html">New Arrivals</a></li>
+                        <li><a href="404page.html">Best Sellers</a></li>
+                        <li><a href="404page.html">Men</a></li>
+                        <li><a href="404page.html">Women</a></li>
+                        <li><a href="404page.html">Accessories</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-col" data-aos="fade-up" data-aos-delay="200">
                     <h4>Support</h4>
                     <ul class="footer-links">
-                        <li><a href="#faq">Help Center</a></li>
-                        <li><a href="#">Shipping & Returns</a></li>
-                        <li><a href="#">Size Guide</a></li>
-                        <li><a href="#">Track Order</a></li>
-                        <li><a href="#">Gift Cards</a></li>
+                        <li><a href="404page.html">Help Center</a></li>
+                        <li><a href="404page.html">Shipping & Returns</a></li>
+                        <li><a href="404page.html">Size Guide</a></li>
+                        <li><a href="404page.html">Track Order</a></li>
+                        <li><a href="404page.html">Gift Cards</a></li>
                     </ul>
                 </div>
 
-                <div class="footer-col" data-aos="fade-up" data-aos-delay="300">
-                    <h4>Company</h4>
-                    <ul class="footer-links">
-                        <li><a href="#story">Our Story</a></li>
-                        <li><a href="#">Sustainability</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
+
 
             </div>
 
             <div class="footer-bottom">
                 <div class="copyright">
                     &copy; 2025 Stackly Theme. All rights reserved.
-                </div>
-                <div class="payment-methods">
-                    <span>VISA</span>
-                    <span>AMEX</span>
-                    <span>MASTERCARD</span>
-                    <span>PAYPAL</span>
                 </div>
             </div>
 
@@ -336,46 +346,35 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js" defer></script>
     <script>
-        // --- 1. INITIALIZE ANIMATIONS ---
         AOS.init({
-            offset: 100, // offset (in px) from the original trigger point
-            duration: 800, // values from 0 to 3000, with step 50ms
-            easing: 'ease-out-cubic', // default easing for AOS animations
-            once: true, // whether animation should happen only once - while scrolling down
+            offset: 100,
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
         });
 
-        // --- 2. FAQ ACCORDION LOGIC ---
         const faqItems = document.querySelectorAll('.faq-item');
         faqItems.forEach(item => {
             const question = item.querySelector('.faq-question');
             question.addEventListener('click', () => {
-                // Close other items
+
                 faqItems.forEach(otherItem => {
                     if (otherItem !== item) otherItem.classList.remove('active');
                 });
-                // Toggle current
+
                 item.classList.toggle('active');
             });
         });
 
-        // --- 3. THEME & SLIDER LOGIC (KEEP YOUR PREVIOUS JS HERE) ---
-        // (Paste the Dark Mode and Slider logic I gave you before here)
-        // ...
-
-        // Initialize Icons
         feather.replace();
-        // --- HERO SLIDER LOGIC ---
         const slides = document.querySelectorAll('.slide');
         const dots = document.querySelectorAll('.nav-dot');
         let currentSlide = 0;
-        const slideInterval = 3000; // Change every 5 seconds
+        const slideInterval = 3000;
 
         function showSlide(index) {
-            // Remove active class from all
             slides.forEach(slide => slide.classList.remove('active'));
             dots.forEach(dot => dot.classList.remove('active'));
-
-            // Add active class to current
             slides[index].classList.add('active');
             dots[index].classList.add('active');
 
@@ -387,15 +386,12 @@
             showSlide(newIndex);
         }
 
-        // Auto Play
         let slideTimer = setInterval(nextSlide, slideInterval);
-
-        // Manual Navigation (Dots)
         dots.forEach((dot, index) => {
             dot.addEventListener('click', () => {
-                clearInterval(slideTimer); // Stop timer when user clicks
+                clearInterval(slideTimer);
                 showSlide(index);
-                slideTimer = setInterval(nextSlide, slideInterval); // Restart timer
+                slideTimer = setInterval(nextSlide, slideInterval);
             });
         });
 
@@ -403,6 +399,59 @@
             const header = document.getElementById('header');
             header.classList.toggle('scrolled', window.scrollY > 50);
         });
+        const homeDropdownBtn = document.getElementById("homeDropdownBtn");
+        const homeDropdown = document.getElementById("homeDropdown");
+        const icon = document.querySelector(".dropdown-icon");
+
+        homeDropdownBtn.addEventListener("click", () => {
+            homeDropdown.classList.toggle("show");
+            icon.classList.toggle("rotate");
+        });
+        document.addEventListener("click", (e) => {
+            if (!homeDropdown.contains(e.target) && !homeDropdownBtn.contains(e.target)) {
+                homeDropdown.classList.remove("show");
+                icon.classList.remove("rotate");
+            }
+        });
+        const form = document.getElementById("newsletterForm");
+        const emailInput = document.getElementById("newsletterEmail");
+        const message = document.getElementById("formMessage");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const email = emailInput.value.trim();
+            message.className = "form-message";
+
+            if (!email) {
+                alert("Please enter your email address.");
+                return;
+            }
+
+            if (!isValidEmail(email)) {
+                alert("Please enter a valid email address.");
+                return;
+            }
+
+            showSuccess("You're in! Thanks for subscribing.");
+            emailInput.value = "";
+        });
+
+        function isValidEmail(email) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+
+        function showError(text) {
+            message.textContent = text;
+            message.classList.add("error");
+        }
+
+        function showSuccess(text) {
+            // message.textContent = text;
+            window.location.href = '404page.html';
+        }
+        document.body.style.overflow = "hidden";
+
     </script>
 </body>
 

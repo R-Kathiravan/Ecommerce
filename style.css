@@ -132,7 +132,7 @@ section {
 }
 
 .nav-links a:hover {
-    color: var(--text-main);
+    color: #b8b8b9;
 }
 
 .nav-actions {
@@ -149,6 +149,10 @@ section {
     position: relative;
 }
 
+.icon-btn:hover {
+    color: #b8b8b9;
+}
+
 .badge {
     position: absolute;
     top: -5px;
@@ -158,6 +162,10 @@ section {
     font-size: 0.6rem;
     padding: 2px 5px;
     border-radius: 50%;
+}
+
+.btn-close {
+    display: none;
 }
 
 /* --- 5. HERO SLIDER (Same as before) --- */
@@ -623,7 +631,6 @@ section {
     color: var(--text-main);
 }
 
-/* 3. Links */
 .footer-links {
     list-style: none;
 }
@@ -781,9 +788,207 @@ section {
 #header.scrolled .nav-links a:hover {
     color: var(--primary);
 }
-#header.scrolled .icon-btn  {
+
+#header.scrolled .icon-btn {
     color: var(--text-muted);
 }
-#header.scrolled .icon-btn:hover  {
+
+#header.scrolled .icon-btn:hover {
     color: var(--primary);
+}
+
+
+
+.home-nav {
+    position: relative;
+    display: inline-block;
+}
+
+.home-btn {
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.dropdown-icon {
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+.home-nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.dropdown-icon {
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    transition: 0.3s ease;
+}
+
+.dropdown-icon.rotate {
+    transform: rotate(180deg);
+}
+
+.home-select {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background: black;
+    border: 1px solid #ddd;
+    /* padding: 8px 0; */
+    border-radius: 10px;
+    min-width: 150px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 100;
+}
+
+.home-select.show {
+    display: block;
+}
+
+.home-select a {
+    display: block;
+    padding: 10px 14px;
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+.hide-head-btn {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+.nav-actions-hid {
+    display: none;
+}
+
+@media (max-width:768px) {
+    #header.scrolled .nav-links a {
+        color: var(--primary-text);
+    }
+
+    #header.scrolled .nav-actions-hid .icon-btn {
+        color: var(--primary-text) !important;
+    }
+
+    #header.scrolled .hamburger {
+        color: var(--primary);
+    }
+
+    .home-select {
+        left: 0% !important;
+    }
+
+    .nav-actions {
+        display: none;
+    }
+
+    .nav-actions-hid {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: flex-start;
+    }
+
+    .dropdown-icon {
+        color: white;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-actions-hid .icon-btn {
+        display: flex;
+        gap: 10px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        background: #0e0d0dcc;
+        position: fixed;
+        top: 0;
+        right: -350px;
+        width: 180px;
+        /* height: 100%; */
+        padding: 60px 20px;
+        transition: right 0.3s ease;
+        z-index: 999;
+
+    }
+
+    .nav-links a {
+        color: rgb(215, 212, 212);
+    }
+
+    .nav-links a:hover {
+        color: #f8f9fa;
+    }
+
+    .nav-links button {
+        color: rgb(255, 255, 255);
+    }
+
+    .btn-close {
+        display: block;
+        cursor: pointer;
+        color: #ff0000 !important;
+        top: 10%;
+        font-weight: 900;
+        right: 30%;
+        position: absolute;
+    }
+
+    .btn-close span {
+        color: rgb(248, 0, 0) !important;
+    }
+
+    .hamburger {
+        display: block;
+        margin-right: 20px;
+        cursor: pointer;
+        color: var(--primary-text);
+
+    }
+
+    header.scrolled .hamburger {
+        color: #ffffff;
+    }
+
+    .nav-links.show {
+        right: -30px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+    }
+
+    .hamburger:hover {
+        color: #b82e5e;
+    }
+
+    .hide-head-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
 }
