@@ -713,6 +713,12 @@
      justify-content: center;
  }
 
+ @media (max-width:478px) {
+     .count-timer {
+         flex-wrap: wrap;
+     }
+ }
+
  .time-box {
      text-align: center;
      border: 2px solid #333;
@@ -925,7 +931,7 @@
      }
 
      .count-content h2 {
-         font-size: 3rem;
+         font-size: 2rem;
      }
 
      .footer-top h1 {
