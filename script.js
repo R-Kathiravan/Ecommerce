@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
         feather.replace();
     }
 
-    // --- 3. SIMPLE CART INTERACTION ---
     const addButtons = document.querySelectorAll('.add-btn');
     const cartBadge = document.querySelector('.badge');
     let count = 0;
@@ -35,8 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.addEventListener('click', function () {
             count++;
             cartBadge.textContent = count;
-
-            // Button Animation Feedback
             const originalText = this.textContent;
             this.textContent = "Added";
             this.style.background = "var(--text-main)";
@@ -44,8 +41,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             setTimeout(() => {
                 this.textContent = originalText;
-                this.style.background = ""; // revert to css default
-                this.style.color = "";      // revert to css default
+                this.style.background = "";
+                this.style.color = "";
             }, 1500);
         });
     });

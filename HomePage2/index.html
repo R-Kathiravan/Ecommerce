@@ -4,68 +4,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AURA | Street & Sport</title>
+    <title>Home | HomePage2</title>
     <link rel="stylesheet" href="style.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@400;600&display=swap"
         rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-
-    <div class="announcement-bar">
-        FREE EXPRESS SHIPPING ON ALL ORDERS OVER $150 — WORLDWIDE.
-    </div>
-
-
-    <nav class="navbar">
-        <div class="container nav-container">
-            <div class="nav-left">
-                <a href="#">Men</a>
-                <a href="#">Women</a>
-                <a href="#">Drops</a>
-            </div>
+    <nav id="navbar">
+        <a href="index.html">
             <img src="./assets/stackly-logo1.webp" alt="LOGO" class="logo">
-            <div class="nav-right">
-                <button class="icon-btn">Search</button>
-                <button class="icon-btn">Cart (0)</button>
+        </a>
+        <ul class="nav-menu">
+            <div class="home-nav">
+                <a href="index.html" class="home-btn active">Home</a>
+
+                <span class="material-icons dropdown-icon" id="homeDropdownBtn">
+                    expand_more
+                </span>
+
+                <div class="home-select" id="homeDropdown">
+                    <a href="../index.html">Home Page 1</a>
+                </div>
             </div>
+            <li><a href="404page.html">Features</a></li>
+            <li><a href="404page.html">Pricing</a></li>
+            <li><a href="404page.html">Why choose us</a></li>
+            <li><a href="404page.html">Accessories</a></li>
+            <div class="btn-close"><span class="material-icons">close</span></div>
+        </ul>
+        <div class="nav-menu btn-head">
+            <a href="404page.html">Get in Touch</a>
+        </div>
+        <div class="hamburger">
+            &#9776
         </div>
     </nav>
 
     <main>
-        <div class="hero">
-            <div class="blob blob-1"></div>
-            <div class="blob blob-2"></div>
-            <div class="blob blob-3"></div>
+        <div class="hero-slideshow">
 
-            <div class="glass-card">
-                <h1>LIQUID FUTURE</h1>
-                <p>Experience the next generation of digital fluidity. Soft, organic, and beautifully chaotic.</p>
-                <a href="#services" class="glass-btn">Explore</a>
+            <div class="slider-wrap">
+                <div class="hero-slide" style="background-image: url('./assets/bg-hero1.webp');">
+                </div>
+                <div class="hero-slide" style="background-image: url('./assets/bg-hero2.webp');">
+                </div>
+                <div class="hero-slide" style="background-image: url('./assets/bg-hero3.webp');">
+                </div>
+                <div class="hero-slide" style="background-image: url('./assets/bg-hero4.webp');">
+                </div>
+            </div>
+
+            <div class="grain-overlay"></div>
+
+            <div class="hero-content" data-aos="fade-up">
+                <h1>Autumn <br> Reverie</h1>
+                <p>Introducing the new collection. Bold textures meet timeless silhouettes.</p>
+                <a href="404page.html" class="btn-shop">Explore Collection</a>
+            </div>
+        </div>
+        <div class="marquee-section1">
+            <div class="marquee-content1">
+                <span>Free Worldwide Shipping on Orders Over $200</span>
+                <span>•</span>
+                <span>New Arrivals Dropping Every Friday</span>
+                <span>•</span>
+                <span>Sustainable Luxury Materials</span>
+                <span>•</span>
+                <span>Free Worldwide Shipping on Orders Over $200</span>
+                <span>•</span>
+                <span>New Arrivals Dropping Every Friday</span>
+                <span>•</span>
+                <span>Sustainable Luxury Materials</span>
+                <span>•</span>
             </div>
         </div>
         <section class="hero-grid-section">
             <div class="container">
                 <div class="bento-hero">
                     <div class="hero-item main" data-aos="fade-up">
-                        <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=2670&auto=format&fit=crop"
-                            alt="Main Model">
+                        <img src="./assets/hero2-1.webp" alt="Main Model">
                         <div class="hero-text">
                             <h2>Urban <br>Utility.</h2>
-                            <a href="#" class="btn-underline">Shop Collection</a>
+                            <a href="404page.html" class="btn-underline">Shop Collection</a>
                         </div>
                     </div>
                     <div class="hero-item sub-1" data-aos="fade-up" data-aos-delay="100">
-                        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=2020&auto=format&fit=crop"
-                            alt="Sub 1">
+                        <img src="./assets/hero2-2.webp" alt="Sub 1">
                         <div class="overlay-text">New Season</div>
                     </div>
                     <div class="hero-item sub-2" data-aos="fade-up" data-aos-delay="200">
-                        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=2070&auto=format&fit=crop"
-                            alt="Sub 2">
+                        <img src="./assets/hero2-3.webp" alt="Sub 2">
                         <div class="overlay-text">Accessories</div>
                     </div>
                 </div>
@@ -100,9 +133,8 @@
                 <div class="horizontal-scroll" id="productContainer">
                     <div class="scroll-card">
                         <div class="p-image">
-                            <img
-                                src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1780&auto=format&fit=crop">
-                            <div class="quick-add">+</div>
+                            <img src="./assets/product1.webp">
+                            <a href="404page.html" class="quick-add">+</a>
                         </div>
                         <div class="p-info">
                             <h4>Boxy Tee</h4>
@@ -111,9 +143,8 @@
                     </div>
                     <div class="scroll-card">
                         <div class="p-image">
-                            <img
-                                src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?q=80&w=2030&auto=format&fit=crop">
-                            <div class="quick-add">+</div>
+                            <img src="./assets/product2.webp">
+                            <a href="404page.html" class="quick-add">+</a>
                         </div>
                         <div class="p-info">
                             <h4>Graphic Hoodie</h4>
@@ -122,9 +153,8 @@
                     </div>
                     <div class="scroll-card">
                         <div class="p-image">
-                            <img
-                                src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=1936&auto=format&fit=crop">
-                            <div class="quick-add">+</div>
+                            <img src="./assets/product3.webp">
+                            <a href="404page.html" class="quick-add">+</a>
                         </div>
                         <div class="p-info">
                             <h4>Bomber Jacket</h4>
@@ -133,9 +163,8 @@
                     </div>
                     <div class="scroll-card">
                         <div class="p-image">
-                            <img
-                                src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop">
-                            <div class="quick-add">+</div>
+                            <img src="./assets/product4.webp">
+                            <a href="404page.html" class="quick-add">+</a>
                         </div>
                         <div class="p-info">
                             <h4>Sport Runner</h4>
@@ -144,9 +173,8 @@
                     </div>
                     <div class="scroll-card">
                         <div class="p-image">
-                            <img
-                                src="https://images.unsplash.com/photo-1582552966584-f282f8936634?q=80&w=1887&auto=format&fit=crop">
-                            <div class="quick-add">+</div>
+                            <img src="./assets/product5.webp">
+                            <a href="404page.html" class="quick-add">+</a>
                         </div>
                         <div class="p-info">
                             <h4>Knit Beanie</h4>
@@ -163,7 +191,7 @@
                     <span class="label-red">Flash Sale</span>
                     <h2>End of Season <br>Clearance</h2>
                     <p>Up to 50% off selected styles. Offer ends when the timer hits zero.</p>
-                    <a href="#" class="btn-solid">Shop Sale</a>
+                    <a href="404page.html" class="btn-solid">Shop Sale</a>
                 </div>
                 <div class="count-timer" data-aos="zoom-in">
                     <div class="time-box">
@@ -183,35 +211,213 @@
                 </div>
             </div>
         </section>
-
-        <footer class="footer-v2">
+        <section class="lookbook-section">
             <div class="container">
-                <div class="footer-top">
-                    <img src="./assets/stackly-logo1.webp" alt="LOGO" class="logo">
-                    <div class="socials-v2">
-                        <a href="#">IG</a>
-                        <a href="#">TW</a>
-                        <a href="#">YT</a>
+                <div class="lookbook-row">
+                    <div class="lookbook-img" data-aos="fade-right">
+                        <img src="./assets/essentials.webp" alt="Lookbook 1">
+                    </div>
+                    <div class="lookbook-content" data-aos="fade-left">
+                        <span class="lookbook-number">01 / ESSENTIALS</span>
+                        <h2>Engineered<br>For Motion.</h2>
+                        <p>Constructed from heavyweight cotton and technical blends. Our new seasonal essentials are
+                            built to withstand the rigorous demands of the concrete jungle.</p>
+                        <a href="404page.html" class="btn-underline btn-hover"
+                            style="color:#000; border-bottom:1px solid #000;">Explore
+                            Lookbook</a>
                     </div>
                 </div>
-                <div class="footer-bottom-row">
-                    <p>&copy; 2025 AURA Retail Group.</p>
-                    <div class="links">
-                        <a href="#">Privacy</a>
-                        <a href="#">Terms</a>
+
+                <div class="lookbook-row reverse">
+                    <div class="lookbook-img" data-aos="fade-left">
+                        <img src="./assets/outdoor.webp" alt="Lookbook 2">
+                    </div>
+                    <div class="lookbook-content" data-aos="fade-right">
+                        <span class="lookbook-number">02 / OUTERWEAR</span>
+                        <h2>Defy The<br>Elements.</h2>
+                        <p>Water-repellent, wind-resistant, and unapologetically bold. The new oversized puffer
+                            collection redefines winter silhouettes.</p>
+                        <a href="404page.html" class="btn-underline btn-hover"
+                            style="color:#000; border-bottom:1px solid #000;">View
+                            Outerwear</a>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="category-menu-section">
+            <div class="container cat-menu-container">
+
+                <ul class="cat-list">
+                    <li class="cat-item" onmouseenter="changeImage('./assets/link1.webp')">
+                        <a href="404page.html" class="cat-link">
+                            Running / Sport
+                            <span class="arrow">→</span>
+                        </a>
+                    </li>
+                    <li class="cat-item" onmouseenter="changeImage('./assets/link2.webp')">
+                        <a href="404page.html" class="cat-link">
+                            Street / Denim
+                            <span class="arrow">→</span>
+                        </a>
+                    </li>
+                    <li class="cat-item" onmouseenter="changeImage('./assets/link3.webp')">
+                        <a href="404page.html" class="cat-link">
+                            Tech / Accessories
+                            <span class="arrow">→</span>
+                        </a>
+                    </li>
+                    <li class="cat-item" onmouseenter="changeImage('./assets/link4.webp')">
+                        <a href="404page.html" class="cat-link">
+                            Footwear
+                            <span class="arrow">→</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <img id="revealImage" src="" class="hover-reveal-img" alt="Category Preview">
+            </div>
+        </section>
+
+        <section class="mosaic-section">
+            <div class="container">
+                <div class="mosaic-header" data-aos="fade-up">
+                    <p style="letter-spacing: 2px; text-transform:uppercase; font-size:12px; margin-bottom:10px;">
+                        @Stackly_OFFICIAL</p>
+                    <h2>On The Streets</h2>
+                </div>
+
+                <div class="mosaic-grid">
+                    <div class="mosaic-item large" data-aos="fade-up">
+                        <img src="./assets/street4.webp" alt="Lifestyle">
+                        <div class="mosaic-overlay">@john_doe / TOKYO</div>
+                    </div>
+
+                    <div class="mosaic-item" data-aos="fade-up" data-aos-delay="100">
+                        <img src="./assets/street1.webp" alt="Detail">
+                    </div>
+
+                    <div class="mosaic-item" data-aos="fade-up" data-aos-delay="200">
+                        <img src="./assets/street2.webp" alt="Detail">
+                    </div>
+
+                    <div class="mosaic-item wide" data-aos="fade-up" data-aos-delay="300">
+                        <img src="./assets/street3.webp" alt="Lifestyle">
+                        <div class="mosaic-overlay">CAMPAIGN 2025</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-section">
+            <div class="container newsletter-box" data-aos="zoom-in">
+                <h2>Join The Cult.</h2>
+                <p>Unlock early access to drops, exclusive events, and secret sales. No spam, just heat.</p>
+
+                <form class="newsletter-form" id="newsletterForm">
+                    <div class="input-group">
+                        <input type="email" class="email-input" id="newsletterEmail" placeholder="ENTER YOUR EMAIL"
+                            required>
+                    </div>
+                    <button type="submit" class="btn-black">Subscribe</button>
+                </form>
+
+                <!-- <form class="newsletter-form" id="newsletterForm">
+                    <div class="input-group">
+                        <input type="email" class="email-input"placeholder="ENTER YOUR EMAIL">
+                    </div>
+                    <input type="email" placeholder="Enter your email" >
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                    <small class="form-message " id="formMessage"></small>
+                </form> -->
+            </div>
+        </section>
+
+        <footer class="mega-footer">
+            <div class="container">
+
+                <div class="footer-top-grid">
+                    <div class="footer-col brand-col">
+                        <img src="./assets/stackly-logo1.webp" alt="Stackly" class="footer-logo">
+                        <p class="footer-desc">Redefining the intersection of street culture and high-performance
+                            utility. Designed in Tokyo. Worn Worldwide.</p>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Pages</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="404page.html">Features</a></li>
+                            <li><a href="404page.html">Pricing</a></li>
+                            <li><a href="404page.html">Why Choose US</a></li>
+                            <li><a href="404page.html">Accessories</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Shop</h4>
+                        <ul>
+                            <li><a href="404page.html">New Arrivals</a></li>
+                            <li><a href="404page.html">Best Sellers</a></li>
+                            <li><a href="404page.html">Accessories</a></li>
+                            <li><a href="404page.html">Limited Drops</a></li>
+                            <li><a href="404page.html">Sale</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Follow Us</h4>
+                        <div class="footer-socials">
+                            <a href="404page.html" class="social-link">Instagram <i
+                                    data-feather="arrow-up-right"></i></a>
+                            <a href="404page.html" class="social-link">Twitter <i data-feather="arrow-up-right"></i></a>
+                            <a href="404page.html" class="social-link">TikTok <i data-feather="arrow-up-right"></i></a>
+                            <a href="404page.html" class="social-link">Youtube <i data-feather="arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="footer-big-type" data-aos="fade-up">Stackly</div> -->
+
+                <div class="footer-bottom-bar">
+                    <div class="copyright">
+                        &copy; 2025 Stackly Retail Group. All Rights Reserved.
+                    </div>
+                    <div class="payment-icons">
+                        <span>VISA</span>
+                        <span>MASTERCARD</span>
+                        <span>AMEX</span>
+                        <span>PAYPAL</span>
+                        <span>APPLE PAY</span>
+                    </div>
+                    <div class="legal-links">
+                        <a href="404page.html">Privacy Policy</a>
+                        <a href="404page.html">Terms of Service</a>
+                    </div>
+                </div>
+
             </div>
         </footer>
 
     </main>
+    <script>
+        const revealImg = document.getElementById('revealImage');
+        const catList = document.querySelector('.cat-list');
 
+        function changeImage(src) {
+            revealImg.src = src;
+            revealImg.classList.add('active');
+        }
+        catList.addEventListener('mouseleave', () => {
+            revealImg.classList.remove('active');
+        });
+    </script>
+    <script src="script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
         feather.replace();
 
-        // 1. Horizontal Scroll Logic
         const container = document.getElementById('productContainer');
         document.getElementById('scrollLeft').addEventListener('click', () => {
             container.scrollBy({ left: -350, behavior: 'smooth' });
@@ -220,7 +426,6 @@
             container.scrollBy({ left: 350, behavior: 'smooth' });
         });
 
-        // 2. Countdown Logic
         function startTimer(duration, displayHours, displayMinutes, displaySeconds) {
             let timer = duration, hours, minutes, seconds;
             setInterval(function () {
@@ -243,7 +448,6 @@
         }
 
         window.onload = function () {
-            // Set timer for 4 hours (in seconds)
             let timeInSeconds = 60 * 60 * 4;
             startTimer(
                 timeInSeconds,
@@ -252,6 +456,68 @@
                 document.querySelector('#seconds')
             );
         };
+    </script>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        const homeDropdownBtn = document.getElementById("homeDropdownBtn");
+        const homeDropdown = document.getElementById("homeDropdown");
+        const icon = document.querySelector(".dropdown-icon");
+
+        homeDropdownBtn.addEventListener("click", () => {
+            homeDropdown.classList.toggle("show");
+            icon.classList.toggle("rotate");
+        });
+        document.addEventListener("click", (e) => {
+            if (!homeDropdown.contains(e.target) && !homeDropdownBtn.contains(e.target)) {
+                homeDropdown.classList.remove("show");
+                icon.classList.remove("rotate");
+            }
+        });
+        const form = document.getElementById("newsletterForm");
+        const emailInput = document.getElementById("newsletterEmail");
+        const message = document.getElementById("formMessage");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const email = emailInput.value.trim();
+            // message.className = "form-message";
+
+            if (!email) {
+                alert("Please enter your email address.");
+                return;
+            }
+
+            if (!isValidEmail(email)) {
+                alert("Please enter a valid email address.");
+                return;
+            }
+
+            showSuccess("You're in! Thanks for subscribing.");
+            emailInput.value = "";
+        });
+
+        function isValidEmail(email) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+
+        // function showError(text) {
+        //     message.textContent = text;
+        //     message.classList.add("error");
+        // }
+
+        function showSuccess(text) {
+            // message.textContent = text;
+            window.location.href = '404page.html';
+        }
     </script>
 </body>
 
